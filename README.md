@@ -88,8 +88,9 @@ nbhelmctl --version
 
 ## Getting started
 
-`nbhelmctl` uses `kubectl` and `helm` (3.14 or later) from your `PATH`, and the
-cluster your kube context points at (or `--context`).
+`nbhelmctl` uses `kubectl` and `helm` (3.8 or later) from your `PATH`, and the
+cluster your kube context points at (or `--context`). NeuBird runs on
+Kubernetes 1.31 or later.
 
 ```bash
 # 1. Redeem the one-time install code NeuBird gave you, into NeuBird's namespace
