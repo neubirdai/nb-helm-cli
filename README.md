@@ -98,6 +98,9 @@ nbhelmctl init --code nbic_... --namespace neubird
 
 # 2. Check the cluster is ready (read-only; changes nothing)
 nbhelmctl check
+#    --probe also pulls the images and calls the network endpoints and your AI
+#    providers from inside the cluster, in short-lived pods it removes after
+nbhelmctl check --probe
 
 # 3. Install
 nbhelmctl install
